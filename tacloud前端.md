@@ -23,3 +23,9 @@
 | autoValidate | Boolean | 默认false 是否自动调用`Base.validateForm`对ids对象进行校验，如果校验失败将不再提交 | - | false |
 | succCallback | Function | callback 返回业务成功后的回调，入参返回的为json对象和XMLHttpRequest对象。<br>例如：`function(data){alert(data.lists.grid2.list[0].aac003)}`，<br>其中data为返回的json数据，grid2是在action中绑定的id(setList('grid2', list))，通常是jsp中datagrid的id. | - | - |
 | failCallback | Function | failCallback 业务失败回调，入参返回的为json对象和XMLHttpRequest对象 | - | - |
+
+#### 示例代码
+
+```js
+Base.submit("form", "hi93Controller!saveMonthlyReportData.do");
+```
